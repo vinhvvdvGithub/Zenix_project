@@ -19,56 +19,56 @@ Route::get('/', function () {
 })
 ->middleware('isLogin');
 
-Route::get('/index.html', function () {
+Route::get('/index', function () {
     return view('index');
 })->middleware('isLogin');
 
-Route::get('/app-profile.html', function () {
+Route::get('/app-profile', function () {
     return view('app-profile');
 })->middleware('isLogin');
 
-Route::get('/coin-details.html', function () {
+Route::get('/coin-details', function () {
     return view('coin-details');
 })->middleware('isLogin');
 
-Route::get('/map-jqvmap.html', function () {
+Route::get('/map-jqvmap', function () {
     return view('map-jqvmap');
 })->middleware('isLogin');
 
-Route::get('/market-capital.html', function () {
+Route::get('/market-capital', function () {
     return view('market-capital');
 })->middleware('isLogin');
 
-Route::get('/my-wallets.html', function () {
+Route::get('/my-wallets', function () {
     return view('my-wallets');
 })->middleware('isLogin');
 
-Route::get('/page-error-400.html', function () {
+Route::get('/page-error-400', function () {
     return view('errors.page-error-400');
 });
 
-Route::get('/page-error-403.html', function () {
+Route::get('/page-error-403', function () {
     return view('errors.page-error-403');
 });
 
-Route::get('/page-error-404.html', function () {
+Route::get('/page-error-404', function () {
     return view('errors.page-error-404');
 });
 
-Route::get('/page-error-500.html', function () {
+Route::get('/page-error-500', function () {
     return view('errors.page-error-500');
 });
 
-Route::get('/page-error-503.html', function () {
+Route::get('/page-error-503', function () {
     return view('errors.page-error-503');
 });
 
-Route::get('/portofolio.html', function () {
+Route::get('/portofolio', function () {
     return view('portofolio');
 })->middleware('isLogin');
 
 
-Route::get('/tranasactions.html', function () {
+Route::get('/tranasactions', function () {
     return view('tranasactions');
 })->middleware('isLogin');
 
